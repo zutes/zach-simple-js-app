@@ -1,0 +1,18 @@
+body {
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #afd4e8;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .pokedex {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
