@@ -19,6 +19,21 @@ var repository = [
     }
 ];
 
+repository.forEach(function (currentPokemon) {
+    document.write(currentPokemon);
+});
+
+
+/*This is an Object.keys forEach loop
+
+Object.keys(repository).forEach(function (currentPokemon) {
+    document.write(repository[currentPokemon]);
+});
+*/
+
+
+/* This is a for loop
+
 for (var i = 0; i < repository.length; i++) {
 
     if (repository[i].height >= 2.2) {
@@ -28,3 +43,5 @@ for (var i = 0; i < repository.length; i++) {
 
     }
 }
+*/
+
