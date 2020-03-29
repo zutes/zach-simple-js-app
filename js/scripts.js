@@ -20,7 +20,7 @@ var repository = [
 ];
 
 repository.forEach(function (currentPokemon) {
-    document.write(currentPokemon);
+    document.write(currentPokemon.name + '<br/>' + 'Pokedex Number: ' + currentPokemon.pokedexNumber + '<br/>' + 'Height: ' + currentPokemon.height + '<br/>' + 'Type(s): ' + currentPokemon.types + '<hr/>');
 });
 
 
