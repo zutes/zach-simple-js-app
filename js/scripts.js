@@ -1,3 +1,4 @@
+var pokemonRepository = (function() {
 var repository = [
     {
         name: 'Pikachu',
@@ -18,8 +19,22 @@ var repository = [
         types: ['electric', 'flying'],
     }
 ];
+function add(pokemon) {
+    repository.push(pokemon);
+  }
 
-repository.forEach(function (currentPokemon) {
+  function getAll() {
+    return repository;
+  }
+
+  return {
+    add: add,
+    getAll: getAll
+  };
+})();
+
+
+pokemonRepository.getAll().forEach(function (currentPokemon) {
     document.write(currentPokemon.name + '<br/>' + 'Pokedex Number: ' + currentPokemon.pokedexNumber + '<br/>' + 'Height: ' + currentPokemon.height + '<br/>' + 'Type(s): ' + currentPokemon.types + '<hr/>');
 });
 
