@@ -33,9 +33,10 @@ function add(pokemon) {
   };
 })();
 
+var $pokemonList = document.querySelector('.pokemon-list');
 
 pokemonRepository.getAll().forEach(function (currentPokemon) {
-    document.write(currentPokemon.name + '<br/>' + 'Pokedex Number: ' + currentPokemon.pokedexNumber + '<br/>' + 'Height: ' + currentPokemon.height + '<br/>' + 'Type(s): ' + currentPokemon.types + '<hr/>');
+    
 });
 
 
