@@ -16,3 +16,7 @@ body {
     margin: 0 auto;
     text-align: center;
   }
+
+  .list-button {
+    background-color: #fff;
+}
