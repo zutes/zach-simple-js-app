@@ -1,3 +1,4 @@
+
 var pokemonRepository = (function() {
 var repository = [
     {
@@ -19,6 +20,18 @@ var repository = [
         types: ['electric', 'flying'],
     }
 ];
+
+var $pokemonList = document.querySelector('ul');
+
+function addListItem(pokemon){
+    var listItem = document.createElement('li');
+    var button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('list-button');
+    listItem.appendChild(button);
+    $pokemonList.appendChild(listItem);
+};
+
 function add(pokemon) {
     repository.push(pokemon);
   }
@@ -29,15 +42,19 @@ function add(pokemon) {
 
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addListItem: addListItem
   };
 })();
 
-var $pokemonList = document.querySelector('.pokemon-list');
 
-pokemonRepository.getAll().forEach(function (currentPokemon) {
-    
-});
+
+
+
+pokemonRepository.getAll().forEach(function (currentItem) {
+    pokemonRepository.addListItem(currentItem);
+})
+
 
 
 /*This is an Object.keys forEach loop
