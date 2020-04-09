@@ -20,3 +20,15 @@ body {
   .list-button {
     background-color:#e8c3af;
 }
+
+@media all and (max-width: 1024px) {
+  .pokemon-list li {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .pokemon-list li {
+    width: 100%;
+  }
+}
