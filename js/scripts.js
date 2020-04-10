@@ -37,14 +37,14 @@ var pokemonRepository = (function () {
         button.classList.add('list-button');
         listItem.appendChild(button);
         $pokemonList.appendChild(listItem);
-        button.addEventListener("click", function (event) {
+        button.addEventListener('click', function (event) {
             showDetails(pokemon);
         });
     }
 
     function showDetails(pokemon) {
         console.log(pokemon.name + '\n' + pokemon.pokedexNumber + '\n' + pokemon.height + '\n' + pokemon.types);
-        alert(pokemon.name + '\n' + pokemon.pokedexNumber + '\n' + pokemon.height + '\n' + pokemon.types);
+
     }
 
 
