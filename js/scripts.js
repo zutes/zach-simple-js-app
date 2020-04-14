@@ -70,11 +70,7 @@ var pokemonRepository = (function () {
             console.error(error);
         });
     }
-    // Function to return pokedex object array
-    function catchAll() {
-        return repository;
-    }
-
+    
     // Function to console.log pokemon details
     function showDetails(item) {
         pokemonRepository.loadDetails(item).then(function () {
