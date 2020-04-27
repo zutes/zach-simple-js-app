@@ -46,7 +46,7 @@ body {
   max-width: 600px;
   text-align: left;
   border-radius: 10px;
-}
+  }
 
 .modal h1 {
   text-align: center;
@@ -91,6 +91,7 @@ body {
   background: none;
   color: #747057;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1024px) {
