@@ -19,6 +19,17 @@ body {
 
   .list-button {
     background-color:#e8c3af;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 10em;
+    cursor: pointer;
+  }
+
+.pokemon-list {
+  list-style-type: none;
 }
 
 #modal-container {
