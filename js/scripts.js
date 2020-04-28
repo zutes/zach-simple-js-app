@@ -91,7 +91,7 @@ var pokemonRepository = (function () {
         var closeButtonElement = document.createElement('button');
         closeButtonElement.classList.add('modal-close');
         closeButtonElement.innerText = 'Close';
-        // Adds event listener to close modal when botton is clicked
+        // Adds event listener to close modal when button is clicked
         closeButtonElement.addEventListener('click', hideModal);
         // Creates element for name in modal content
         var nameElement = document.createElement('h1');
